@@ -3,7 +3,6 @@ import Cardlist from './Cardlist';
 import Searchbox from './Searchbox'
 import {robots} from './robots';
 import Scroll from './Scroll';
-import ErrorControl from './ErrorControl';
 import './App.css';
 
 class App extends Component {
@@ -36,9 +35,7 @@ onSearchChange = (event) => {
 		<h1 className='f1'>Robofriends</h1>
 		<Searchbox searchChange={this.onSearchChange}/>
 		<Scroll>
-		<ErrorControl>
 		<Cardlist robots={filteredRobots}/>
-		</ErrorControl>
 		</Scroll>
 		</div>
 		);
